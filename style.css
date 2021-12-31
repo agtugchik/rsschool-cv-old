@@ -1,1 +1,88 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url("assets/fonts/OpenSans-MediumItalic.ttf");
+}
 
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+html {
+    scroll-behavior: smooth; 
+  }
+
+body {
+    font-family: 'Open Sans';
+    min-height: 200vh;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    position: relative;
+    color: black;
+}
+
+.header {
+    background: darkslategray;
+    position: sticky;
+    top: 0px;
+    height: 50%;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section {
+    width: 50%;
+}
+
+.nav-list {
+    font-size: 20px;
+    font-weight: bolder;
+    list-style-type: none;
+    /* margin: auto; */
+    /* width: 80%; */
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-item a::before {
+    content: "";
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: darkred;
+    transition: 0.5s;
+    transform: scaleX(0);
+}
+.nav-item a:hover:before {
+    transform: scaleX(1);
+}    
+
+.nav-link {
+    padding: 0 10px;
+    line-height: 50px;
+}
+
+@media (max-width: 768px) {
+    .section {
+        width: 100%;
+    }
+}
