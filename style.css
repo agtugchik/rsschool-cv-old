@@ -16,7 +16,7 @@ body {
     font-family: 'Open Sans';
     margin: 0;
     padding: 0;
-    background: crimson;
+    background: rgb(25, 25, 25);
 
     display: flex;
     flex-direction: column;
@@ -26,13 +26,16 @@ body {
 .list {
     display: flex;
     flex-direction: column;
-    list-style: none;
 }
 
 a {
     text-decoration: none;
     position: relative;
-    color: black;
+    color: rgb(255, 255, 255);
+}
+h2 {
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgb(255, 255, 255);
 }
 
 .round {
@@ -50,22 +53,23 @@ a {
     padding: 0 0;
     min-height: 100vh;
     justify-content: space-between;
-    background: coral;
+    color: rgb(255, 255, 255);
 }
 
 .header {
-    background: darkslategray;
-    position: sticky;
-    top: 0px;
+    white-space: nowrap;
+    background: rgb(0, 0, 0);
     height: 50%;
 }
 
 .main {
     display: flex;
     flex-wrap: wrap;
+    background: rgb(50, 50, 50);
 }
 .footer {
-    background: red;
+    white-space: nowrap;
+    background: rgb(255, 0, 0);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -74,21 +78,28 @@ a {
 }
 
 .footer-content {
-
     padding: 0 50px;
-
 }
 
 .section {
-    padding: 4%;
+    padding: 0 4%;
     width: 50%;
     display: flex;
     flex-direction: column;
     align-items: left;
 }
 
+.section-name-text {
+    padding: 30px 0px;
+    margin: 0;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
 .section-name {
+    padding: auto;
     margin: auto;
+    white-space: nowrap;
+    align-items: center;
     font-size: 26px;
     font-weight: 600;
 }
@@ -113,6 +124,10 @@ a {
     padding-right: 50px;
 }
 
+.nav-item {
+    margin: 10px;
+}
+
 .nav-item a::before {
     content: "";
     bottom: 0;
@@ -120,7 +135,7 @@ a {
     position: absolute;
     width: 100%;
     height: 3px;
-    background-color: darkred;
+    background-color: rgb(255, 0, 0);
     transition: 0.5s;
     transform: scaleX(0);
 }
