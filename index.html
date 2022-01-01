@@ -18,7 +18,7 @@
                 <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
                 <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
                 <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
-                <!-- <li class="nav-item"><a href="" class="nav-link">Courses</a></li> -->
+                <li class="nav-item"><a href="#courses" class="nav-link">Courses</a></li>
                 <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
                 <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
                 <li class="nav-item"><a href="#english" class="nav-link">English</a></li>
@@ -29,12 +29,19 @@
     <main class="main">
         <section class="section">
             <img class="round" src="./assets/img/avatar.jpg" alt="avatar">
-        </section class="section-name">
-            <h1 class=>Artur Shvedenko</h1>
-            <h2>Beginner Front-End Developer</h2>
+        </section>
+        <section class="section section-name">
+            <h1 class="section-name-text">Artur Shvedenko</h1>
+            <h2 class="section-name-text">Beginner Front-End Developer</h2>
         </section>
         <section class="section" id="contacts">
             <h2 class="section-title">Contacts</h2>
+            <ul class="list">
+                <li>Github: <a href="https://github.com/agtugchik">agtugchik</a></li>
+                <li>Telegram: <a href="https://t.me/agtugchik">agtugchik</a></li>
+                <li>E-mail: agtugchik13@gmail.com</li>
+                <li>Discord: Explosion#4800</li>
+            </ul>
         </section>
         <section class="section" id="summary">
             <h2 class="section-title">Summary</h2>
@@ -46,23 +53,52 @@
         </section>
         <section class="section" id="skills">
             <h2 class="section-title">Skills</h2>
+            <ul class="list">
+                <li>JS</li>
+                <li>C#</li>
+                <li>CSS(Basic)</li>
+                <li>HTML(Basic)</li>
+                <li>Git(Basic)</li>
+            </ul>
         </section>
         <section class="section" id="code">
-            <h2 class="section-title">Code </h2>  
+            <h2 class="section-title">Code </h2>
+                <pre>
+                    <code>
+function sumCubes(n){
+let result = 0;
+
+    for(let i = 1; i <= n; i++) {
+         result = result + i**3;
+    }
+                            
+    return result;
+}
+                    </code>
+                </pre>
+        </section>
+        <section class="section" id="courses">
+            <h2 class="section-title">Courses</h2>
+            <p><a target="_blank" href="https://rs.school/js-stage0/">RSS - JavaScript/Front-end. Stage 0</a> - right now.
+            <br><a target="_blank" href="https://rs.school/js/">RSS - JavaScript/Front-end</a> - coming soon.</p>
         </section>
         <section class="section" id="projects">
             <h2 class="section-title">Projects</h2>
+            <p></p>
+            <a target="_blank" href="https://agtugchik.github.io/rsschool-cv/"><img style="max-height: 100px;" src="./assets/img/site-preview.png" alt="site-preview"><br>Just this CV.</a>
         </section>
         <section class="section" id="education">
             <h2 class="section-title">Education </h2>
+            <p>2017 Sukhoi State Technical University of Gomel/Faculty of Automated and Information Systems</p>
         </section>
         <section class="section" id="english">
             <h2 class="section-title">English</h2>
+            <p>A2 or higher.</p>
         </section>
     </main>
 
     <footer class="footer">
-        <p class="footer-content">2022 Ⓒ agtugchik</p>
+        <h2 class="footer-content">2022 Ⓒ agtugchik</h2>
         <a class="footer-content" target="_blank" href="https://github.com/agtugchik">
             <img style="width: 75px" src="./assets/img/git-hub-logo.svg" alt="git-hub-logo">
         </a>
