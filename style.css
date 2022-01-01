@@ -7,11 +7,6 @@
     box-sizing: border-box;
 }
 
-.container {
-    max-width: 1440px;
-    margin: 0 auto;
-}
-
 html {
     scroll-behavior: smooth; 
   }
@@ -33,6 +28,11 @@ a {
     color: black;
 }
 
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
 .header {
     background: darkslategray;
     position: sticky;
@@ -44,6 +44,20 @@ a {
     display: flex;
     flex-wrap: wrap;
 }
+.footer {
+    background: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px
+    
+}
+
+.footer-content {
+
+    padding: 0 50px;
+
+}
 
 .section {
     width: 50%;
@@ -53,12 +67,16 @@ a {
     font-size: 20px;
     font-weight: bolder;
     list-style-type: none;
-    /* margin: auto; */
-    /* width: 80%; */
+    /* margin: auto;
+    width: 80%; */
 
     display: flex;
     justify-content: flex-end;
     align-items: center;
+}
+
+.nav-list:last-child {
+    padding-right: 50px;
 }
 
 .nav-item a::before {
