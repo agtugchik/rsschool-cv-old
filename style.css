@@ -64,6 +64,7 @@ h2 {
 
 .main {
   display: flex;
+  flex: 1;
   flex-wrap: wrap;
   background: rgb(50, 50, 50);
 }
